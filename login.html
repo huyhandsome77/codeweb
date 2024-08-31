@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/login.css" />
+    <script src="main.js"></script>
+    <title>Login | WebShop</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="login">
+        <h3>Login</h3>
+        <form onsubmit="login(event)">
+          <label>
+            Username :
+            <input type="text" placeholder="username" id="username" />
+          </label>
+          <label>
+            Password :
+            <input type="password" placeholder="password" id="password" />
+          </label>
+          <button type="submit">Login</button>
+        </form>
+        <p>
+          Don't Forget ?
+          <a href="#">Regsister now</a>
+          </p>
+      </div>
+
+      <div id="regsister">
+        <h3>regsister</h3>
+        <form>
+          <label>
+            Username :
+            <input type="text" placeholder="username" id="username" />
+          </label>
+          <label>
+            Email :
+            <input type="email" placeholder="password" id="password" />
+          </label>
+          <label>
+            Password :
+            <input type="password" placeholder="password" id="password" />
+          </label>
+          <label>
+            Confirm Password :
+            <input
+              type="password"
+              placeholder="confirm password"
+              id="re_password"
+            />
+          </label>
+          <button type="submit">Regsister</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

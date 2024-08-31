@@ -9,7 +9,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
     <link rel="shortcut icon" type="image/png" href="/assets/img/logo.png" />
-    <script src="/main.js"></script>
     <title>WEBSHOP | HUYLK</title>
   </head>
   <body>
@@ -24,7 +23,7 @@
             </div>
             <div class="user">
               <i class="fa-solid fa-user"></i>
-              <a href="#">Đăng nhập</a>
+              <a href="/login.html">Đăng nhập</a>
             </div>
           </div>
         </div>
@@ -53,7 +52,7 @@
 
       <div id="content">
         <div id="content-top">
-          <h4>TÊN WEBSHOP</h4>
+          <h4>WEBSHOP - HUYLK</h4>
           <p>
             Hệ thống website bán hàng online chất lượng là một nền tảng toàn
             diện, hỗ trợ tối đa cho các doanh nghiệp và cá nhân kinh doanh trực
@@ -86,7 +85,7 @@
                 an toàn - chất lượng
               </p>
             </div>
-            <button onclick="buy()">Mua hàng</button>
+            <button onclick="buy()">Đặt hàng</button>
           </div>
 
           <div class="box box2">
@@ -99,7 +98,7 @@
                 thông tin khách hàng. Hỗ trợ khách hàng 24/7.
               </p>
             </div>
-            <button onclick="buy()">Mua hàng</button>
+            <button onclick="buy()">Đặt hàng</button>
           </div>
 
           <div class="box box3">
@@ -112,19 +111,20 @@
                 hiệu suất cao cho website của bạn.
               </p>
             </div>
-            <button onclick="buy()">Mua hàng</button>
+            <button onclick="buy()">Đặt hàng</button>
           </div>
         </div>
         <div id="content-bottom">
-          <div class="slider slider1">
-            <img src="/assets/img/slider-bt1.jpg" alt="" />
-          </div>
-          <div class="slider slider2">
-            <img src="/assets/img/slider-bt2.jpg" alt="" />
-          </div>
-          <div class="slider slider3">
-            <img src="/assets/img/slider-bt3.jpg" alt="" />
-          </div>
+            <img class="slider slider1" src="/assets/img/slider-bt1.jpg" alt="" />
+            <img class="slider slider2" src="/assets/img/slider-bt2.jpg" alt="" />
+            <img class="slider slider3" src="/assets/img/slider-bt3.jpg" alt="" />
+            <div class="dots">
+              <ul>
+                <li class="active-dots"></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
         </div>
       </div>
     </div>
@@ -137,5 +137,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="/main.js"></script>
   </body>
 </html>
