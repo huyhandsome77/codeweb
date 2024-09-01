@@ -115,17 +115,66 @@
           </div>
         </div>
         <div id="content-bottom">
-            <img class="slider slider1" src="/assets/img/slider-bt1.jpg" alt="" />
-            <img class="slider slider2" src="/assets/img/slider-bt2.jpg" alt="" />
-            <img class="slider slider3" src="/assets/img/slider-bt3.jpg" alt="" />
-            <div class="dots">
-              <ul>
-                <li class="active-dots"></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </div>
+          <img class="slider slider1" src="/assets/img/slider-bt1.jpg" alt="" />
+          <img class="slider slider2" src="/assets/img/slider-bt2.jpg" alt="" />
+          <img class="slider slider3" src="/assets/img/slider-bt3.jpg" alt="" />
+          <div class="dots">
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
         </div>
+      </div>
+      <div id="notification">
+        <div class="noti noti-success">
+          <h3>Thông báo</h3>
+          <p>
+            Đặt hàng thành công
+            <i class="fa-solid fa-check"></i>
+          </p>
+          <button onclick="closeNoti()">OK</button>
+        </div>
+        <div class="noti noti-fail">
+          <h3>Thông báo</h3>
+          <p>
+            Đặt hàng không thành công
+            <i class="fa-solid fa-x"></i>
+          </p>
+          <button onclick="closeNoti()">OK</button>
+        </div>
+      </div>
+
+      <div id="form-order">
+        <form>
+          <h3 style="grid-area: title">Thêm thông tin giao hàng</h3>
+          <input
+            style="grid-area: name"
+            type="text"
+            placeholder="Họ và tên"
+            id="name-order"
+          />
+          <input
+            style="grid-area: phone"
+            type="text"
+            placeholder="Số điện thoại"
+            id="phone-order"
+          />
+          <input type="text" placeholder="Địa chỉ cụ thể" id="address-order" />
+          <span style="grid-area: noti">Loại địa chỉ</span>
+          <select
+            style="grid-area: section"
+            name="type-address"
+            id="type-address"
+          >
+            <option value="1">Nhà riêng</option>
+            <option value="2">Công ty</option>
+          </select>
+          <button style="grid-area: submit" type="submit" onclick="order()">
+            Đặt hàng
+          </button>
+        </form>
       </div>
     </div>
 

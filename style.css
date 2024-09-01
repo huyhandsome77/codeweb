@@ -9,6 +9,7 @@
 html {
   font-family: "Prompt", sans-serif;
   font-size: 16px;
+  position: relative;
 }
 
 a {
@@ -265,14 +266,18 @@ li {
 
   border-radius: 50px;
 }
-#content-bottom .dots ul{
+#content-bottom .dots ul {
+  width: 100%;
+  padding: 5px 5px;
+  border-radius: 20px;
+  background-color: rgba(141, 119, 119, 0.5);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
-#content-bottom .dots li{
+#content-bottom .dots li {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -280,6 +285,115 @@ li {
   margin: 0 5px;
 }
 
-#content-bottom .dots li.active-dots{
-  padding : 0 10px;
+#content-bottom .dots .active {
+  background-color: white;
+  transition: all 0.3s;
+}
+
+/* Thong bao dat hang */
+#notification {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#notification .noti {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  max-height: 400px;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(6, 102, 175, 0.3);
+  padding: 20px;
+  display: none;
+}
+
+#notification .noti h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+#notification .noti p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+#notification .noti button {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  margin: 20px 0;
+  background-color: green;
+}
+
+.fa-x,
+.fa-check {
+  padding: 3px;
+  border-radius: 50%;
+}
+
+.fa-x {
+  background-color: red;
+}
+
+.fa-check {
+  background-color: green;
+}
+
+#form-order {
+  max-width: 1000px;
+  height: 400px;
+  background-color: white;
+  border: 1px solid #999;
+  border-radius: 10px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  display : none;
+}
+
+#form-order form {
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "name phone"
+    "address  address"
+    "noti section"
+    "submit submit";
+  grid-gap: 10px;
+}
+
+#form-order form h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px 0;
+}
+
+#form-order form input {
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+#form-order form input:focus {
+  background-color: rgba(66, 64, 77, 0.136);
+}
+
+#form-order form button {
+  margin-top: 20px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #009efd;
+  color: white;
 }
